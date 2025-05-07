@@ -1,8 +1,11 @@
 {
-  "name": "Python Workspace",
-  "description": "A workspace with Python and Docker",
+  "name": "Azure Function - Python",
+  "description": "An Azure Functions workspace using Python for serverless computing.",
   "categories": [
+    "Azure",
+    "Functions",
     "Python"
   ],
   "icon": "https://raw.githubusercontent.com/edrosan/az-fn-py-tem-idx/main/app/.idx/icon.png"
 }
+
