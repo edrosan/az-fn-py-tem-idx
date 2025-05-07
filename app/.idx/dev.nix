@@ -34,7 +34,7 @@
       onCreate = {
         # Example: install JS dependencies from NPM
         create-venv = "[ -d $PWD/.venv ] || python -m venv $PWD/.venv";
-        pip-install = "[ -f requirements.txt ] && $PWD/.venv/bin/pip install --no-cache-dir -r requirements.txt || true";
+          pip-install = "[ -f requirements.txt ] && [ -d $PWD/.venv ] && $PWD/.venv/bin/pip install --no-cache-dir -r requirements.txt || true";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [];
       };
