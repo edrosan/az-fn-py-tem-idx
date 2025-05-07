@@ -1,7 +1,9 @@
 # Proyecto: Entorno de Desarrollo con Nix
-<img alt="PyPI - PyJWT" src="https://img.shields.io/pypi/v/PyJWT.svg">
+
 
 Este proyecto utiliza [Nix](https://nixos.org/) para definir y gestionar un entorno de desarrollo reproducible, ideal para equipos que requieren consistencia en las herramientas y dependencias.
+
+[![firebasestudio](https://cdn.firebasestudio.dev/btn/open_light_32.svg?style=for-the-badge&logo=circleci&logoColor=white)](https://studio.firebase.google.com/new?template=https%3A%2F%2Fgithub.com%2Fedrosan%2Faz-fn-py-tem-idx)
 
 ## Características principales
 
