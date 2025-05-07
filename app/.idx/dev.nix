@@ -26,18 +26,7 @@
     # Enable previews
     previews = {
       enable = true;
-      previews = {
-        # web = {
-        #   # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
-        #   # and show it in IDX's web preview panel
-        #   command = ["npm" "run" "dev"];
-        #   manager = "web";
-        #   env = {
-        #     # Environment variables to set for your server
-        #     PORT = "$PORT";
-        #   };
-        # };
-      };
+      previews = {};
     };
     # Workspace lifecycle hooks
     workspace = {
@@ -45,19 +34,12 @@
       onCreate = {
         # Example: install JS dependencies from NPM
         create-venv = "[ -d $PWD/.venv ] || python -m venv $PWD/.venv";
+        pip-install = "[ -f requirements.txt ] && pip install --no-cache-dir -r requirements.txt || true";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [];
       };
       # Runs when the workspace is (re)started
-      onStart = {
-        # Example: start a background task to watch and re-build backend code
-        # watch-backend = "npm run watch-backend";
-      };
+      onStart = {};
     };
   };
-  # services = {
-  #   docker = {
-  #     enable = true;
-  #   };
-  # };
 }
