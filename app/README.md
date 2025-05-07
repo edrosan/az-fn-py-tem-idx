@@ -1,44 +1,10 @@
-# Proyecto: Entorno de Desarrollo con Nix
+# Azure Function
 
+This project implements an Azure Function and JWT authentication.
 
-Este proyecto utiliza [Nix](https://nixos.org/) para definir y gestionar un entorno de desarrollo reproducible, ideal para equipos que requieren consistencia en las herramientas y dependencias.
+## Project Structure
 
-[![firebasestudio](https://cdn.firebasestudio.dev/btn/open_light_32.svg?style=for-the-badge&logo=circleci&logoColor=white)](https://studio.firebase.google.com/new?template=https%3A%2F%2Fgithub.com%2Fedrosan%2Faz-fn-py-tem-idx)
-
-## Características principales
-
-- **Canal Nixpkgs:** Se utiliza el canal `stable-24.05` para garantizar estabilidad en los paquetes.
-- **Paquetes incluidos:**
-  - Python 3.11 (`python311`)
-  - Pip para Python 3.11 (`python311Packages.pip`)
-  - Azure CLI (`azure-cli`)
-  - Azure Functions Core Tools (`azure-functions-core-tools`)
-- **Variables de entorno:** Puedes definir variables personalizadas en la sección `env`.
-- **Extensiones recomendadas para VS Code/IDX:**
-  - humao.rest-client
-  - ms-azuretools.vscode-azurefunctions
-  - ms-azuretools.vscode-azureresourcegroups
-  - ms-python.autopep8
-  - ms-python.debugpy
-  - ms-python.python
-  - PKief.material-icon-theme
-
-## Automatizaciones
-
-- **onCreate:** Al crear el workspace, se genera automáticamente un entorno virtual de Python (`.venv`) si no existe.
-- **Previews:** El sistema está preparado para habilitar vistas previas web, solo necesitas descomentar y ajustar la configuración según tu proyecto.
-
-## Personalización
-
-- Puedes agregar más paquetes de Nix desde [search.nixos.org/packages](https://search.nixos.org/packages).
-- Para agregar más extensiones de VS Code, consulta [open-vsx.org](https://open-vsx.org/).
-- Puedes definir hooks adicionales para automatizar tareas al iniciar o crear el workspace.
-
-## Recursos
-
-- [Documentación de Nix](https://nixos.org/manual/nix/stable/)
-- [Personalización de workspaces en Firebase/IDX](https://firebase.google.com/docs/studio/customize-workspace)
-
----
-
-> Este archivo describe la configuración base del entorno. Modifica y amplía según las necesidades específicas de tu proyecto.
+- `function_app.py`: Main Azure Function code.
+- `middleware.py`: JWT authentication middleware.
+- `requirements.txt`: Project dependencies.
+- `host.json`, `local.settings.json`: Azure Functions configuration files.
