@@ -1,0 +1,8 @@
+{
+  "name": "Python Workspace",
+  "description": "A workspace with Python and Docker",
+  "categories": [
+    "Python"
+  ],
+  "icon": "https://raw.githubusercontent.com/edrosan/python-template-firebase-studio/main/app/.idx/icon.png"
+}
