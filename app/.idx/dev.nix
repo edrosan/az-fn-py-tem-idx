@@ -45,7 +45,6 @@
       onCreate = {
         # Example: install JS dependencies from NPM
         create-venv = "[ -d $PWD/.venv ] || python -m venv $PWD/.venv";
-        test-hook = "echo 'onCreate hook running' > oncreate.log";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [];
       };
